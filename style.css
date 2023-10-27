@@ -24,3 +24,14 @@ body {
     text-align: center;
     padding: 20px;
 }
+
+.label{
+    width: 250px;
+    display: inline-block;
+    text-align: right;
+}
+
+.textarea{
+    border-radius: 3px;
+    font-style: normal;
+}
