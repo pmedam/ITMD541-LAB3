@@ -15,8 +15,8 @@ function getTipPercentage() {
     const tipmnt = (billttl * prcnt) / 100;
     const totlblwtp = billttl + tipmnt;
 
-    TipAmount.value = tipmnt;
-    TotalBillWithTip.value = totlblwtp;
+    TipAmount.value = tipmnt.toFixed(2);
+    TotalBillWithTip.value = totlblwtp.toFixed(2);
 
 }
 
