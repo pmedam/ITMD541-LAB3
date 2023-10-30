@@ -9,6 +9,10 @@ TipSlider.addEventListener("input", getTipPercentage);
 function getTipPercentage() {
     TipPercentage.value = TipSlider.value;
 
+    if(isNaN(BillTotal.value)){
+        alert("Enter a Valid Input")
+    }
+
     const billttl = parseInt(BillTotal.value);
     const prcnt = parseInt(TipPercentage.value);
 
