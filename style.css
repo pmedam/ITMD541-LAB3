@@ -15,12 +15,33 @@ body {
 
 .container {
     position: center;
-    padding:40px;
+    padding: 40px;
     max-width: 600px;
     height: 400px;
     background-color: white;
     border-radius: 10px;
+    /* animation: rotate 4s infinite; */
 
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        border-top-color: rgb(245, 200, 51);
+    }
+    50% {
+        transform: rotate(180deg);
+        border-top-color: rgb(51, 174, 245);
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top-color: rgb(245, 51, 51);
+    }
+
+}
+
+.container:hover{
+    animation: none;
 }
 
 .form {
